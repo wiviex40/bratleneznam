@@ -1,0 +1,77 @@
+/* Cookie Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f3f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    font-family: Arial, sans-serif;
+    color: #111;
+    text-align: center;
+}
+
+.modal-box {
+    max-width: 500px;
+    padding: 20px;
+}
+
+.modal-box h2 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.modal-box p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 10px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-accept {
+    background-color: #8a5cd6;
+    color: white;
+    border: none;
+}
+
+.btn-accept:hover {
+    background-color: #7749c3;
+}
+
+.btn-decline {
+    background-color: transparent;
+    color: #8a5cd6;
+    border: 2px solid #8a5cd6;
+}
+
+.privacy-link {
+    display: inline-block;
+    color: #8a5cd6;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.privacy-link:hover {
+    text-decoration: underline;
+}
