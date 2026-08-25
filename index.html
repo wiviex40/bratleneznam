@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cookie Overlay -->
+    <div id="cookieModal" class="modal-overlay">
+        <div class="modal-box">
+            <h2>Cookies and user-generated content</h2>
+            <p>
+                This website uses cookies to offer you the most relevant information and better understand how you use this website.<br>
+                Please accept cookies for optimal performance.
+            </p>
+            <div class="btn-group">
+                <button class="btn btn-accept" onclick="startAudio()">Accept</button>
+                <button class="btn btn-decline" onclick="startAudio()">Decline</button>
+            </div>
+            <a href="#" class="privacy-link">Privacy policy</a>
+        </div>
+    </div>
+
+    <!-- Background Image -->
+    <img src="image.png" alt="My Image">
+
+    <!-- Audio Element -->
+    <audio id="bgAudio" loop>
+        <source src="zerobuild.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function startAudio() {
+            const modal = document.getElementById('cookieModal');
+            const audio = document.getElementById('bgAudio');
+            
+            // Hide the modal popup
+            modal.style.display = 'none';
+            
+            // Play the music
+            audio.play();
+        }
+    </script>
+
+</body>
+
+</html>
